@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2566">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;AR.js Video Marker&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://aframe.io/releases/1.3.0/aframe.min.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body style="margin: 0; overflow: hidden;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;a-scene embedded arjs="trackingMethod: best; sourceType: webcam;"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Hier wird das Bild als Marker genutzt --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a-nft</p>
+<p class="p1"><span class="Apple-converted-space">        </span>type="nft"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>url="marker/your-marker"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>smooth="true"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>smoothCount="10"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>smoothTolerance="0.01"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>smoothThreshold="5"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Das Video wird über dem Marker abgespielt --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a-video</p>
+<p class="p1"><span class="Apple-converted-space">          </span>src="video/sample.mp4"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>position="0 0 0"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>rotation="-90 0 0"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>width="1"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>height="0.5"</p>
+<p class="p1"><span class="Apple-converted-space">          </span>autoplay</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&gt;&lt;/a-video&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a-nft&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;a-entity camera&gt;&lt;/a-entity&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a-scene&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
